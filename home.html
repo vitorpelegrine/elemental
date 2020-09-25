@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Venda de carnes assadas</title>
+    <script src="./aula.js"></script>
+</head>
+<body>
+    <h1>Cadastro de vendas</h1>
+    <form action="#">
+        <div class="row">
+            <div class="small-3 columns">
+                <label for="horaRetirada">Hora da retirada</label>
+            </div>
+            <div class="small-9 columns">
+                <input type="text" id="horaRetirada" />
+            </div>
+        </div>
+            <div class="row">
+                <div class="small-3 columns">
+                    <label for="sabores">Sabor:</label>
+                </div>
+                <div class="small-9 columns">
+                    <input type="radio" name="lbsabores" value="semrecheio" />Sem recheio
+                    <input type="radio" name="lbsabores" value="carne" />Carne
+                    <input type="radio" name="lbsabores" value="aipimComBacon" />Aipim com bacon
+                </div>
+            </div>
+            <button onclick id="CriarCliente">Criar</button>
+
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Hora da retirada</th>
+                <th>Sabor</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+        </tbody>
+    </table>
+    
+    <script id="tmplLinha"  type="text/x-jsrender">
+        <td data-column="Hora"></td>
+        <td data-column="Sabor"></td>
+    </script>
+
+</body>
+
